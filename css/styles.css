@@ -171,7 +171,7 @@ button {
   background-color: var(--navy-blue-modal);
   padding-top: 188px;
   padding-bottom: 188px;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .banner-title {
@@ -182,7 +182,7 @@ button {
   letter-spacing: 0.02em;
   color: var(--white);
 
-  width: 496px;
+  max-width: 496px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 48px;
@@ -198,6 +198,9 @@ button {
   line-height: 1.5;
   letter-spacing: 0.04em;
 
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
   min-width: 169px;
   min-height: 56px;
   border: none;
@@ -216,6 +219,7 @@ button {
   |============================
 */
 .feature-section {
+  padding-top: 120px;
   padding-bottom: 0;
 }
 .feature-container {
@@ -253,6 +257,7 @@ button {
 }
 
 .examples-item {
+  border: 1px solid var(--cornflower);
 }
 
 /**
@@ -260,6 +265,11 @@ button {
   | TEAM
   |============================
 */
+.team-container {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+}
 
 .sector-title {
   font-weight: 700;
@@ -319,6 +329,11 @@ button {
   padding-bottom: 100px;
 }
 
+.logo-footer {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
 .footer-desc {
   font-size: 16px;
   line-height: 1.5;
@@ -326,7 +341,6 @@ button {
   color: var(--cloud);
 
   width: 264px;
-  margin-top: 16px;
 }
 
 /*
@@ -336,8 +350,9 @@ button {
 */
 
 .portfolio-section {
-  padding-top: 96px;
-  padding-bottom: 120px;
+  padding: 96px 120px;
+   /* padding-top: 96px;
+   padding-bottom: 120px; */
 }
 
 /**
@@ -347,12 +362,12 @@ button {
 */
 .filter-container {
   display: flex;
+  justify-content: center;
   gap: 24px;
 
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 72px;
-  width: 586px;
+  margin-bottom: 72px;
 }
 
 .filter-buttons {
@@ -368,8 +383,7 @@ button {
   border: 1px solid var(--cornflower);
   border-radius: 4px;
 
-  min-width: 69px;
-  min-height: 48px;
+  padding: 12px 24px;
 }
 
 .filter-buttons:hover,
@@ -380,18 +394,7 @@ button {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-.second-btn {
-  min-width: 116px;
-}
-.third-btn {
-  min-width: 78px;
-}
-.fourth-btn {
-  min-width: 101px;
-}
-.fifth-btn {
-  min-width: 126px;
-}
+
 /**
   |============================
   | PROJECTS
@@ -409,9 +412,7 @@ button {
 }
 
 .card-projects-content {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  padding-left: 16px;
+  padding: 32px 16px;
   border-bottom: 1px solid var(--cornflower);
   border-left: 1px solid var(--cornflower);
   border-right: 1px solid var(--cornflower);
