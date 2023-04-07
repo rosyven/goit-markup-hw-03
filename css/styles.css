@@ -93,6 +93,10 @@ button {
   | HEADER
   |============================
 */
+.header-container {
+  display: flex;
+  align-items: center;
+}
 .border-bottom {
   border-bottom: 1px solid var(--cornflower);
 }
@@ -147,12 +151,13 @@ button {
 
 .contacts {
   font-style: normal;
-  margin-left: auto;
+  margin-left: 332px;
 }
 
 .contacts-list {
   display: flex;
   gap: 40px;
+  /* margin-left: auto; */
 }
 
 .header-contacts {
@@ -219,8 +224,7 @@ button {
   |============================
 */
 .feature-section {
-  padding-top: 120px;
-  padding-bottom: 0;
+  padding: 120px 0;
 }
 .feature-container {
   display: flex;
@@ -258,6 +262,8 @@ button {
 
 .examples-item {
   border: 1px solid var(--cornflower);
+  width: calc((100% - 48px) / 3);
+  
 }
 
 /**
