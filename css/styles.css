@@ -255,7 +255,10 @@ button {
   | EXAMPLES
   |============================
 */
-.examples-sector {
+.examples-section {
+  padding-top: 0;
+}
+.examples-list {
   display: flex;
   gap: 24px;
 }
